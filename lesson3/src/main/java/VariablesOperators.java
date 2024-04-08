@@ -8,71 +8,38 @@ public class VariablesOperators {
         int monthSw = in.nextInt();
 
         switch (monthSw) {
+            case 12:
             case 1:
-                System.out.println("January");
-                break;
             case 2:
-                System.out.println("February");
+                System.out.println("Зима");
                 break;
             case 3:
-                System.out.println("March");
-                break;
             case 4:
-                System.out.println("April");
-                break;
             case 5:
-                System.out.println("May");
+                System.out.println("Весна");
                 break;
             case 6:
-                System.out.println("June");
-                break;
             case 7:
-                System.out.println("July");
-                break;
             case 8:
-                System.out.println("August");
+                System.out.println("Лето");
                 break;
             case 9:
-                System.out.println("September");
-                break;
             case 10:
-                System.out.println("October");
-                break;
             case 11:
-                System.out.println("November");
-                break;
-            case 12:
-                System.out.println("December");
-                break;
+                System.out.println("Осень");
         }
 //        2. Написать программу для вывода названия поры года по номеру
 //        месяца. При решении используйте оператор if-else-if.
         int monthIf = in.nextInt();
 
-        if (monthIf == 1) {
-            System.out.println("January");
-        } else if (monthIf == 2) {
-            System.out.println("February");
-        } else if (monthIf == 3) {
-            System.out.println("March");
-        } else if (monthIf == 4) {
-            System.out.println("April");
-        } else if (monthIf == 5) {
-            System.out.println("May");
-        } else if (monthIf == 6) {
-            System.out.println("June");
-        } else if (monthIf == 7) {
-            System.out.println("July");
-        } else if (monthIf == 8) {
-            System.out.println("August");
-        } else if (monthIf == 9) {
-            System.out.println("September");
-        } else if (monthIf == 10) {
-            System.out.println("October");
-        } else if (monthIf == 11) {
-            System.out.println("November");
-        } else if (monthIf == 12) {
-            System.out.println("December");
+        if (monthIf == 1 || monthIf == 2 || monthIf == 12) {
+            System.out.println("Зима");
+        } else if (monthIf == 3 || monthIf == 4 || monthIf == 5) {
+            System.out.println("Весна");
+        } else if (monthIf == 6 || monthIf == 7 || monthIf == 8) {
+            System.out.println("Лето");
+        } else if (monthIf == 9 || monthIf == 10 || monthIf == 11) {
+            System.out.println("Осень");
         }
 
 //        3. Напишите программу, которая будет принимать на вход число и на
@@ -81,10 +48,10 @@ public class VariablesOperators {
 //        остатка от деления - операция выглядит так: '% 2').
         int number = in.nextInt();
 
-        if (number % 2 == 0) {
-            System.out.printf("Number %d is even", number);
-        } else {
+        if (number % 2 == 1) {
             System.out.printf("Number %d is odd", number);
+        } else {
+            System.out.printf("Number %d is even", number);
         }
 
 //        4. Для введенного числа t (температура на улице) вывести
