@@ -1,0 +1,19 @@
+Index: lesson3/src/main/java/VariablesOperators.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\r\n\r\npublic class VariablesOperators {\r\n    public static void main(String[] args) {\r\n        //1. Написать программу для вывода названия поры года по номеру\r\n        //месяца.При решении используйте оператор switch-case:\r\n        Scanner in = new Scanner(System.in);\r\n        int monthSw = in.nextInt();\r\n\r\n        switch (monthSw) {\r\n            case 12:\r\n            case 1:\r\n            case 2:\r\n                System.out.println(\"Зима\");\r\n                break;\r\n            case 3:\r\n            case 4:\r\n            case 5:\r\n                System.out.println(\"Весна\");\r\n                break;\r\n            case 6:\r\n            case 7:\r\n            case 8:\r\n                System.out.println(\"Лето\");\r\n                break;\r\n            case 9:\r\n            case 10:\r\n            case 11:\r\n                System.out.println(\"Осень\");\r\n        }\r\n//        2. Написать программу для вывода названия поры года по номеру\r\n//        месяца. При решении используйте оператор if-else-if.\r\n        int monthIf = in.nextInt();\r\n\r\n        if (monthIf == 1 || monthIf == 2 || monthIf == 12) {\r\n            System.out.println(\"Зима\");\r\n        } else if (monthIf == 3 || monthIf == 4 || monthIf == 5) {\r\n            System.out.println(\"Весна\");\r\n        } else if (monthIf == 6 || monthIf == 7 || monthIf == 8) {\r\n            System.out.println(\"Лето\");\r\n        } else if (monthIf == 9 || monthIf == 10 || monthIf == 11) {\r\n            System.out.println(\"Осень\");\r\n        }\r\n\r\n//        3. Напишите программу, которая будет принимать на вход число и на\r\n//        выход будет выводить сообщение четное число или нет.\r\n//        Для определения четности числа используйте операцию получения\r\n//        остатка от деления - операция выглядит так: '% 2').\r\n        int number = in.nextInt();\r\n\r\n        if (number % 2 == 1) {\r\n            System.out.printf(\"Number %d is odd\", number);\r\n        } else {\r\n            System.out.printf(\"Number %d is even\", number);\r\n        }\r\n\r\n//        4. Для введенного числа t (температура на улице) вывести\r\n//        Если t>–5, то вывести «Тепло».\r\n//        Если –5>= t > –20, то вывести «Нормально».\r\n//        Если –20>= t, то вывести «Холодно».\r\n        int temperature = in.nextInt();\r\n\r\n        if (temperature > -5) {\r\n            System.out.println(\"Тепло\");\r\n        } else if (temperature <= -5 && temperature > -20) {\r\n            System.out.println(\"Нормально\");\r\n        } else if (temperature <= -20) {\r\n            System.out.println(\"Холодно\");\r\n        }\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/lesson3/src/main/java/VariablesOperators.java b/lesson3/src/main/java/VariablesOperators.java
+--- a/lesson3/src/main/java/VariablesOperators.java	
++++ b/lesson3/src/main/java/VariablesOperators.java	
+@@ -8,9 +8,7 @@
+         int monthSw = in.nextInt();
+ 
+         switch (monthSw) {
+-            case 12:
+-            case 1:
+-            case 2:
++            case 12, 1, 2:
+                 System.out.println("Зима");
+                 break;
+             case 3:
