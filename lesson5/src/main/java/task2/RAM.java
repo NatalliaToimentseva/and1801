@@ -5,7 +5,7 @@ public class RAM {
     private final int volume;
 
     public RAM (){
-        name = "Henex";
+        name = "Hynix";
         volume = 16;
     }
 
