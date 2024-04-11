@@ -2,4 +2,5 @@ rootProject.name = 'and1801'
 include 'lesson1'
 include 'lesson2'
 include 'lesson3'
+include 'lesson5'
 
