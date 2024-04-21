@@ -11,7 +11,7 @@ public enum Profession {
         return rate;
     }
 
-    public void setRate(int rate) {
+    public void setRate(double rate) {
         this.rate = rate;
     }
 }
