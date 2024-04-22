@@ -4,12 +4,12 @@ public class Person implements Cloneable{
     private String name;
     private int age;
     private int salary;
-    private Cat hasPet;
+    private Cat pet;
     public Person(String name, int age, int salary, Cat cat) {
         this.name = name;
         this.age = age;
         this.salary = salary;
-        this.hasPet = cat;
+        this.pet = cat;
     }
     public String getName() {
         return name;
@@ -20,8 +20,8 @@ public class Person implements Cloneable{
     public int getSalary() {
         return salary;
     }
-    public Cat getHasPet() {
-        return hasPet;
+    public Cat getPet() {
+        return pet;
     }
     public void setName(String name) {
         this.name = name;
@@ -34,8 +34,8 @@ public class Person implements Cloneable{
     public void setSalary(int salary) {
         this.salary = salary;
     }
-    public void setHasPet(Cat hasPet) {
-        this.hasPet = hasPet;
+    public void setPet(Cat pet) {
+        this.pet = pet;
     }
     @Override
     public boolean equals(Object o) {
@@ -55,13 +55,13 @@ public class Person implements Cloneable{
         return "Person name: " + name + "\n" +
                 "age: " + age + "\n" +
                 "salary: " + salary + "\n" +
-                "has pet: " + hasPet;
+                "pet: " + pet;
     }
 
     @Override
     public Person clone() throws CloneNotSupportedException {
             Person clone = (Person) super.clone();
-            clone.hasPet = hasPet.clone();
+            clone.pet = pet.clone();
             return clone;
     }
 }
