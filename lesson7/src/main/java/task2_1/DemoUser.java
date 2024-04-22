@@ -1,6 +1,6 @@
 package task2_1;
 
-public class demoUser {
+public class DemoUser {
     public static void main(String[] args) {
         User director = new User("Alex", Profession.DIRECTOR, 6);
         System.out.println("Director's salary is " + director.getSalary());
