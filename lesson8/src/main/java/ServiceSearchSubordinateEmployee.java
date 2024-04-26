@@ -7,18 +7,11 @@ public class ServiceSearchSubordinateEmployee {
         boolean hasThisEmployee = false;
 
         for (Employee employee: subordinateEmployees) {
-            if (employee instanceof Worker) {
-              if (Objects.equals(employee.getName(), name)) {
-                  hasThisEmployee = true;
-                  break;
-              }
-            } else if (employee instanceof Director && !Objects.equals(employee.getName(), name)) {
-                if (((Director) employee).getSubordinateEmployees() != null) {
+            if (Objects.equals(employee.getName(), name)) {
+                    hasThisEmployee = true;
+                    break;
+            } else if (employee instanceof Director && ((Director) employee).getSubordinateEmployees() != null) {
                     hasThisEmployee = searchSubordinateEmployeeByName(name,(Director) employee);
-                }
-            } else {
-                hasThisEmployee = true;
-                break;
             }
         }
         return hasThisEmployee;
