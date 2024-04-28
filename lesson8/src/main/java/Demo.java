@@ -20,10 +20,12 @@ public class Demo {
           [Employee name: Bob, surname: Green, experience: 4, position: WORKER, Employee name: Tom, surname: Smith, experience: 2, position: WORKER]*/
 
         //3
-        Director director2 = new Director("Mary", "Black", 4,Position.DIRECTOR);
-        director2.setSubordinateEmployee(worker2);
-
+        Director director2 = new Director("Jane", "Black", 4,Position.DIRECTOR);
         director1.setSubordinateEmployee(director2);
+        Director director3 = new Director("Mary", "Black", 4,Position.DIRECTOR);
+        director3.setSubordinateEmployee(worker2);
+
+        director1.setSubordinateEmployee(director3);
 
         //4
         System.out.println(director1);
