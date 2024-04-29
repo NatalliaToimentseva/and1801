@@ -3,8 +3,8 @@ import java.util.List;
 
 public class Director extends Employee{
     private final List<Employee> subordinateEmployees;
-    public Director(String name, String surname, int experience, Position position) {
-        super(name, surname, experience, position);
+    public Director(String name, String surname, int experience) {
+        super(name, surname, experience, Position.DIRECTOR);
         this.subordinateEmployees = new ArrayList<>();
     }
     public List<Employee> getSubordinateEmployees() {
