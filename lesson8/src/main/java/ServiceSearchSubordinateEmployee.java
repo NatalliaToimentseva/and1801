@@ -12,6 +12,7 @@ public class ServiceSearchSubordinateEmployee {
                     break;
             } else if (employee instanceof Director && ((Director) employee).getSubordinateEmployees() != null) {
                     hasThisEmployee = searchSubordinateEmployeeByName(name,(Director) employee);
+                    if (hasThisEmployee) break;
             }
         }
         return hasThisEmployee;
