@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56aacf32-9f80-40df-9808-9c6dc8c2ed6e" name="Changes" comment="some files ...">
-      <change afterPath="$PROJECT_DIR$/lesson5/src/main/java/task1/CreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson5/src/main/java/task1/DemoCreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson5/src/main/java/task2/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson5/src/main/java/task2/DemoComputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson5/src/main/java/task2/HDD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson5/src/main/java/task2/RAM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson4/src/main/java/Arr.java" afterDir="false" />
+    <list default="true" id="56aacf32-9f80-40df-9808-9c6dc8c2ed6e" name="Changes" comment="homework for lesson 9">
+      <change afterPath="$PROJECT_DIR$/lesson10/src/main/java/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/src/main/java/DocumentNumberHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
@@ -26,9 +21,22 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -41,34 +49,37 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lesson7/build/classes/java/main/task2_1/demoUser.class" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2eg3aw93Ta4PAxDCeS9icTmAMFF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lesson4&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;jbr-17&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "lesson10",
+    "jdk.selected.JAVA_MODULE": "jbr-17",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
-}</component>
-  <component name="RunManager" selected="Application.Arrays">
-    <configuration name="Arr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Arr" />
-      <module name="and1801.lesson4.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Cycles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Cycles" />
-      <module name="and1801.lesson3.main" />
+}]]></component>
+  <component name="RunManager" selected="Application.Demo">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Demo" />
+      <module name="and1801.lesson10.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,14 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DemoComputer" />
-        <item itemvalue="Application.DemoCreditCard" />
-        <item itemvalue="Application.Cycles" />
-        <item itemvalue="Application.Arrays" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.VariablesOperators" />
         <item itemvalue="Application.Hello" />
-        <item itemvalue="Application.Cycles" />
-        <item itemvalue="Application.VariablesOperators" />
+        <item itemvalue="Application.DemoCreditCard" />
+        <item itemvalue="Application.DemoComputer" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +167,31 @@
       <option name="project" value="LOCAL" />
       <updated>1712680868300</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="homework for lesson 8">
+      <option name="closed" value="true" />
+      <created>1714143761906</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714143761906</updated>
+    </task>
+    <task id="LOCAL-00005" summary="homework for lesson 8">
+      <option name="closed" value="true" />
+      <created>1714143932806</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714143932806</updated>
+    </task>
+    <task id="LOCAL-00006" summary="homework for lesson 9">
+      <option name="closed" value="true" />
+      <created>1714151391088</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714151391088</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +200,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="lesson8" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="master" />
@@ -208,7 +245,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="lesson8" />
                       </list>
                     </value>
                   </entry>
@@ -224,6 +261,8 @@
     <MESSAGE value="homework for 3 lesson3" />
     <MESSAGE value="homework for 3 lesson3 with corrections" />
     <MESSAGE value="some files ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="some files ..." />
+    <MESSAGE value="homework for lesson 8" />
+    <MESSAGE value="homework for lesson 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework for lesson 9" />
   </component>
 </project>
