@@ -21,8 +21,7 @@ public class Demo {
         }
 
         //Вывести всех пользователей по стажу работы (от большего к меньшему)
-        List<User> sortedByWorkExperienceUsers = new ArrayList<>(users);
-        Collections.sort(sortedByWorkExperienceUsers);
+        Set<User> sortedByWorkExperienceUsers = new TreeSet<>(users);
         System.out.println(sortedByWorkExperienceUsers);
 
         //Вывести только уникальные имена пользователей
