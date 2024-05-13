@@ -30,39 +30,45 @@ public class Demo {
         System.out.println(students);
 
         //вывести всех юношей
+        List<Student> onlyMan = new ArrayList<>();
         for (Student student: students) {
             if (student.getSex() == Sex.Man) {
-                System.out.println(student.getName() + " is man");
+                onlyMan.add(student);
             }
         }
-        System.out.println();
+        System.out.println("Man among students: " + onlyMan);
 
         //найти всех студентов старше 20 лет
+        List<Student> elderThanTwenty = new ArrayList<>();
         for (Student student: students) {
             if (student.getAge() > 20) {
-                System.out.println(student.getName() + " age more than 20");
+                elderThanTwenty.add(student);
             }
         }
-        System.out.println();
+        System.out.println("Students elder than 20: " + elderThanTwenty);
 
         //найти всех студентов, которые посещают менее 2 занятий
+        List<Student> attendsLessTwoClasses = new ArrayList<>();
         int count = 0;
         for (Student student: students) {
             if (student.getSubjects().size() < 2) {
-                System.out.println(student.getName()  + " attends less than two classes");
+                attendsLessTwoClasses.add(student);
                 count ++;
             }
         }
         if (count == 0) {
             System.out.println("No students attending less than two classes");
+        } else {
+            System.out.println("Student attends less than two classes: " + attendsLessTwoClasses);
         }
-        System.out.println();
 
         //найти всех студентов, которые посещают занятие - программирование
+        List<Student> attendsProgramming = new ArrayList<>();
         for (Student student: students) {
             if (student.getSubjects().contains(Classes.Programming)) {
-                System.out.println(student.getName() + " attends Programming classes");
+                attendsProgramming.add(student);
             }
         }
+        System.out.println("Attends Programming classes" + attendsProgramming);
     }
 }
