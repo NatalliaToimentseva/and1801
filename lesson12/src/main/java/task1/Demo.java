@@ -14,11 +14,13 @@ public class Demo {
         System.out.println(users);
 
         //Найти всех пользователей, у который количество задач больше 2
+        List<User> usersWithMoreTwoTask = new ArrayList<>();
         for (User user: users) {
             if (user.getTask().size() > 2) {
-                System.out.println(user.getName() + " has more than 2 task");
+                usersWithMoreTwoTask.add(user);
             }
         }
+        System.out.println("Users have more than 2 task: " + usersWithMoreTwoTask);
 
         //Вывести всех пользователей по стажу работы (от большего к меньшему)
         Set<User> sortedByWorkExperienceUsers = new TreeSet<>(users);
