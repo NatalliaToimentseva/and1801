@@ -13,12 +13,14 @@ public class ProductsService {
         return products;
     }
 
-    public Product findMostExpensiveProduct () {
-        Optional<Product> expensiveProduct = products.stream().max(Comparator.comparingInt(Product::getPrice));
-         return expensiveProduct.orElse(null);
+    public Optional<Product> findMostExpensiveProduct () {
+        return products.stream()
+                .max(Comparator
+                        .comparingInt(Product::getPrice));
     }
     public Product findCheapestProduct () {
-        Optional<Product> cheapProduct = products.stream().min(Comparator.comparingInt(Product::getPrice));
+        Optional<Product> cheapProduct = products.stream()
+                .min(Comparator.comparingInt(Product::getPrice));
         return cheapProduct.orElse(null);
     }
 
@@ -38,8 +40,9 @@ public class ProductsService {
     }
     public Set<String> findManufacturerByCountry (String country) {
         return products.stream()
-                .filter(p -> Objects.equals(p.getManufacturer().getCountry(), country))
-                .map(p -> p.getManufacturer().getName())
+                .map(Product::getManufacturer)
+                .filter(m -> Objects.equals(m.getCountry(), country))
+                .map(Manufacturer::getName)
                 .collect(Collectors.toSet());
     }
     public Set<Store> findStoreByCity (String city) {
