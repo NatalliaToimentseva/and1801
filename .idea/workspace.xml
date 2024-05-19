@@ -5,6 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56aacf32-9f80-40df-9808-9c6dc8c2ed6e" name="Changes" comment="homework for lesson 9">
+      <change afterPath="$PROJECT_DIR$/lesson13/src/main/java/lesson14/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson13/src/main/java/task1/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson13/src/main/java/task1/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson13/src/main/java/task1/Manufacturer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson13/src/main/java/task1/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson13/src/main/java/task1/ProductsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson13/src/main/java/task1/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson13/src/main/java/task2/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson12/src/main/java/task1/Demo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson12/src/main/java/task1/User.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson12/src/main/java/task1/UsersNames.java" afterDir="false" />
@@ -40,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -60,13 +69,26 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2eg3aw93Ta4PAxDCeS9icTmAMFF" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lesson13&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;jbr-17&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.lesson14.Main">
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -87,6 +109,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task2.Main" />
+      <module name="and1801.lesson13.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="and1801.lesson1.main" />
@@ -94,6 +125,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VariablesOperators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VariablesOperators" />
+      <module name="and1801.lesson3.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lesson14.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson14.Main" />
+      <module name="and1801.lesson13.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson14.*" />
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="task2.Main" />
       <module name="and1801.lesson12.main" />
@@ -107,6 +151,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="task1.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task1.Demo" />
+      <module name="and1801.lesson13.main" />
     <configuration name="VariablesOperators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="VariablesOperators" />
       <module name="and1801.lesson3.main" />
@@ -129,6 +176,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lesson14.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.task1.Demo" />
         <item itemvalue="Application.Demo" />
@@ -267,5 +315,12 @@
     <MESSAGE value="homework for lesson 8" />
     <MESSAGE value="homework for lesson 9" />
     <option name="LAST_COMMIT_MESSAGE" value="homework for lesson 9" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="products" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
