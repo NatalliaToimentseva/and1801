@@ -49,14 +49,12 @@ public class Demo {
 
         //найти всех студентов, которые посещают менее 2 занятий
         List<Student> attendsLessTwoClasses = new ArrayList<>();
-        int count = 0;
         for (Student student: students) {
             if (student.getSubjects().size() < 2) {
                 attendsLessTwoClasses.add(student);
-                count ++;
             }
         }
-        if (count == 0) {
+        if (attendsLessTwoClasses.isEmpty()) {
             System.out.println("No students attending less than two classes");
         } else {
             System.out.println("Student attends less than two classes: " + attendsLessTwoClasses);
